@@ -109,8 +109,14 @@ header {
     font-weight: 700;
     font-size: 1rem;
 }
+.desktop {
+    display: none;
+}
 
 @media(min-width:1000px) {
+    body {
+        display: flex;
+    }
     header {
         background: none;
         justify-content: flex-start;
@@ -121,5 +127,12 @@ header {
     }
     main {
         padding-inline: 7rem;
+    }
+    .conteudo {
+        width: 100%;
+    }
+    .desktop {
+        display: block;
+        width: 100%;
     }
 }
